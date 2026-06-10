@@ -9,6 +9,7 @@ import {
   Title,
   Text,
 } from "@mantine/core";
+import { SushiIcon } from "@set/sushi-mantine-react/icons";
 
 export default function App() {
   return (
@@ -39,6 +40,15 @@ export default function App() {
               <Button loading>Loading</Button>
               <Button disabled>Disabled</Button>
             </Group>
+
+            <Stack align="center" gap="xs">
+              <Text size="sm" c="dimmed">
+                Icon rendered by SushiIcon from @set/sushi-mantine-react/icons
+              </Text>
+              Start
+              <SushiIcon name="back_android" size={24} alt="Back Android" />
+              End
+            </Stack>
 
             <Stack align="center">
               <Text size="sm" c="dimmed">
